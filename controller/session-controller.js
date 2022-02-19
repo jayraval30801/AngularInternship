@@ -11,5 +11,18 @@ function signup(req,res){
     res.end()
 }
 
+function saveUser(req,res){
+
+    console.log(req.body)//
+
+    res.json({
+        msg:"done danadone....",
+        status:200,
+        data:req.body
+    })
+}
+
 module.exports.login = login
 module.exports.signup = signup
+module.exports.saveuser = saveUser 
+ 
